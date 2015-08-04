@@ -9,6 +9,14 @@ http://www.lynda.com/C-tutorials/C-Essential-Training/188207-2.html?srchtrk=inde
 Unity 5 2D Essential Training (tho it might be in JS)
 http://www.lynda.com/Unity-2D-tutorials/Unity-5-2D-Essential-Training/185319-2.html?srchtrk=index:1%0Alinktypeid:2%0Aq:unity%0Apage:1%0As:relevance%0Asa:true%0Aproducttypeid:2
 
+Unity
+
 Optionals:
 
+Here are the updated tuts on Unity in C#:
+http://forum.unity3d.com/threads/finally-an-interactive-tutorial-series-that-will-teach-you-c-for-unity3d.175410/
+
 Extras:
+
+Fun graphical tuts on C# and Unity:
+http://catlikecoding.com/unity/tutorials/
