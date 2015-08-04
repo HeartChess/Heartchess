@@ -1,0 +1,14 @@
+Here we can share a source links with each other about stuff we might be needing for the project.
+
+
+Everyone must do this:
+
+C# Essential Training
+http://www.lynda.com/C-tutorials/C-Essential-Training/188207-2.html?srchtrk=index:1%0Alinktypeid:2%0Aq:c%23%0Apage:1%0As:relevance%0Asa:true%0Aproducttypeid:2
+
+Unity 5 2D Essential Training (tho it might be in JS)
+http://www.lynda.com/Unity-2D-tutorials/Unity-5-2D-Essential-Training/185319-2.html?srchtrk=index:1%0Alinktypeid:2%0Aq:unity%0Apage:1%0As:relevance%0Asa:true%0Aproducttypeid:2
+
+Optionals:
+
+Extras:
