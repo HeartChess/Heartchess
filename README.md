@@ -1,5 +1,5 @@
 # Heartchess
-### Trying to get some experience in Unity programming 
+#### Trying to get some experience in Unity programming 
 
 The first stage of the project is preparation, research and planning,
 so please post only relevant materials and links to the project.
