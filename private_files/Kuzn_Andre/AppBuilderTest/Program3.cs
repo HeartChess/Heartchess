@@ -5,21 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Programss
+namespace ConsoleApp
 {
-    using LibraryOfMethods;
-    public partial class Program
+    public class Programs1
     {
-        LibraryOfMethods.CalcMethods transf = new LibraryOfMethods.CalcMethods();
-        
         public const long MeaningOfLife = 4532434245453;
-        LibraryOfMethods.CalcMethods staff = new LibraryOfMethods.CalcMethods();
-        public void Main()
+        public void ProgrammsssMainFunction()
         {
-            
-            var transf = new CalcMethods();
-            Console.WriteLine(transf.ToString());
-            
+
             Output("//////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
             int staff = 4;
             int staff2 = new Int32(); // explisit declaration
@@ -56,19 +49,19 @@ namespace Programss
                 char[] opt = { 'n', 'o', 'p', 'e' };
                 Output(new System.String(opt));
             }
-            
+
             sbyte sre = 56;
             Output("staff" + (sre++).ToString()); // interastingly give me result --> do math (56)
             Output("staff" + (++sre).ToString()); // do math --> give me result (58)
             Output("(56)Here is value after " + sre.ToString());
 
             Output(ones.ToString());
-            
+
             bool stafss = !false; // just to use  
             int? nope = null; // ? --> does the job...
-            
+
             int news = nope ?? 45; // very notty with data types
-            
+
             Output("Equals is " + ("staff".Equals("staff")).ToString());
 
             Console.WriteLine("{0}, {1}", Char.IsLetterOrDigit(symbol).ToString(), Char.IsSymbol(symbol).ToString());
@@ -96,20 +89,6 @@ namespace Programss
         private void OutputN(int v)
         {
             Console.WriteLine(v.ToString());
-        }
-    }
-}
-
-namespace LibraryOfMethods
-{
-    public class CalcMethods
-    {
-        public static void callVal()
-        {
-            // if method is static then can do staff.Output
-            // if not then need to init it first new Classname()
-            
-            Console.Write("Yeap///////////////////////");
         }
     }
 }
