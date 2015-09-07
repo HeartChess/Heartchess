@@ -6,7 +6,9 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows;
-using CalcNameSpace;
+using Program2;
+using Program4;
+using Program5;
 
 // shft + cmd + p   --> dnx run
 //to run an app on command line
@@ -22,28 +24,45 @@ namespace ConsoleApp
     {
         public static void Main(string[] arg)
         {
-            System.Console.WriteLine("staff works");
             //init from Program2
-            Calculator1 instanceOf = new Calculator1();
-                        
+            //  Calculator1 instanceOf = new Calculator1();
+            //Calculator
+            //  instanceOf.MainRun();     
+            
             //Draw mountains function
             //  ProgramToDrawMountains.LoopingStaff(120);
 
+            // init from Program4
+            //  FirstClass instanceOf = new FirstClass();
+            //  instanceOf.TestingTuts();
             
-            //Calculator
-            instanceOf.MainRun();
+            //init from Program5
+            mapGenerator map = new mapGenerator();
+            map.generateMap();
+            
         }
 
-        public void Output(string stf)
+        public void Output(params string[] list)
         {
-            Console.WriteLine("\n {0} \n", stf);
+            string result = list[0];
+            for(byte i = 1; i < list.Count() - 1; i ++)
+            {
+                if(list.Count() > 1)
+                {
+                    result += list[list.Count() - 1];
+                }
+                
+                result += String.Format("{0}", list[i]);
+            }
+            
+            Console.WriteLine("\n {0} \n", result);
         }
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     /**
     *   Just tests of different concepts
     **/
@@ -86,24 +105,24 @@ namespace ConsoleApp
             int eval = nullable ?? 34; // eval == 34
             Output(new StringBuilder().Append(eval).ToString());
         }
-        
+
         private void Output(string str)
         {
             Program s = new Program();
             s.Output(str);
-        } 
+        }
     }
-    
-    
-    
-    
-    
-   
+
+
+
+
+
+
     /**
     *   Prog to draw mountains out of chars
     *   LoopingStaff  ---> main function
     **/
-    class ProgramToDrawMountains 
+    class ProgramToDrawMountains
     {
         private static void OutputLoop(string stf, int times = 1, int a = 1)
         {
@@ -115,7 +134,7 @@ namespace ConsoleApp
                     stf += stf;
                 }
             }
-            
+
             for (int i = 0; i < times; i++)
             {
                 result += stf;
@@ -123,52 +142,54 @@ namespace ConsoleApp
 
             Console.WriteLine("{0}", result);
         }
-        
+
         public static void LoopingStaff(
-            byte length, 
-            byte mountainWidth = 30, 
-            byte mountainDimentions = 1, 
-            string left_side = "/", 
+            byte length,
+            byte mountainWidth = 30,
+            byte mountainDimentions = 1,
+            string left_side = "/",
             string right_side = "\\")
         {
             // mountain width
             byte[] arr = new byte[mountainWidth];
-            for(int i = 0; i < mountainWidth; i ++){
+            for (int i = 0; i < mountainWidth; i++)
+            {
                 arr[i] = (byte)i;
             };
-           
+
             byte counter = 0;
             bool change = true;
-            
-            do {
+
+            do
+            {
                 counter++;
                 // switch from one mountain side to another 
                 string sideSwitcher = change ? left_side : right_side;
                 arr = arr.Reverse().ToArray();
                 OutKeywordTry(change, out change); // quite nice way to modify vars on a run without return
-                //  change = !change;
-                
+                                                   //  change = !change;
+
                 // one loop => one mountain
                 for (int i = 0; i < arr.Count(); i++)
                 {
                     OutputLoop(sideSwitcher, arr[i], (byte)mountainDimentions);
-                }               
+                }
             } while (counter <= length);
-                        
+
         }
-        
-        private static void OutKeywordTry (bool b, out bool result) 
+
+        private static void OutKeywordTry(bool b, out bool result)
         {
             result = !b;
         }
     }
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     // enum declaration, the point is to make the declaration more expressive
     public enum TrafficLights
     {
@@ -191,7 +212,7 @@ namespace ConsoleApp
             _danger = light;
         }
     }
- 
+
 }
 
 

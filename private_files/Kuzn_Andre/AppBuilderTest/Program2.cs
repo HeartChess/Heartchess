@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using ConsoleApp;
 
-namespace CalcNameSpace
+namespace Program2
 {
     public class Calculator1
     {
