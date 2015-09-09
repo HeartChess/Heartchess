@@ -1,0 +1,15 @@
+Here is a game of my creation
+
+1) If you want create a new character select 1 option arcade game.
+2) Chose an option to create a character.
+3) After done, load character (done for purposes of checking)
+4) DO NOT CRETE 2 characters in one session, log out first, otherwise may crash or get buggy. 
+
+Dummy characters for fight to use:
+
+name: hero1
+pass: hero1
+
+name: hero2
+pass: hero2
+

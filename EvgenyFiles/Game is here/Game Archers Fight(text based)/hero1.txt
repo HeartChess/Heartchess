@@ -1,0 +1,13 @@
+hero1
+hero1
+0
+0
+0
+400
+Crossbow
+Arrows
+NULL
+NULL
+Tabard_and_mail
+Mail
+Leather
